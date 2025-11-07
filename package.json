@@ -1,22 +1,11 @@
 {
-  "name": "loopcity:-the-ai-that-rediscovers-your-city",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "loop-city",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^19.2.0",
-    "@google/genai": "^1.27.0",
-    "react-dom": "^19.2.0"
+    "build": "npx esbuild index.tsx --bundle --format=esm --platform=browser --outdir=dist && cp -f index.html dist/index.html && if [ -f _redirects ]; then cp _redirects dist/_redirects; fi && if [ -d assets ]; then cp -R assets dist/assets; fi"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "esbuild": "^0.19.0"
   }
 }
+
