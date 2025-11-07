@@ -4,8 +4,11 @@
   "scripts": {
     "build": "npx esbuild index.tsx --bundle --format=esm --platform=browser --outdir=dist && cp -f index.html dist/index.html && if [ -f _redirects ]; then cp _redirects dist/_redirects; fi && if [ -d assets ]; then cp -R assets dist/assets; fi"
   },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
-    "esbuild": "^0.19.0"
+    "esbuild": "^0.21.5"
   }
 }
-
