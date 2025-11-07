@@ -1,0 +1,7 @@
+{
+  "name": "LoopCity: The AI That Rediscovers Your City",
+  "description": "LoopCity uses AI and local data to instantly generate personalized, bite-sized adventures. Tell the app how you feel, where you are, and how long you want to go — LoopCity does the rest, creating 'micro-itineraries' to help you rediscover your city.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
